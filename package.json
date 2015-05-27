@@ -1,0 +1,35 @@
+{
+  "name": "@goabonga/sandbox",
+  "version": "0.0.0",
+  "description": "It's just my sandbox",
+  "private": "true",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec",
+    "jshint": "node ./node_modules/jshint/bin/jshint index.js ./test",
+    "jscs": "node ./node_modules/jscs/bin/jscs index.js ./test  -x",
+    "jsdoc": "node ./node_modules/jsdoc/jsdoc.js -r index.js  -d ./doc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goabonga/sandbox.git"
+  },
+  "author": "Chris Becker <goabonga@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goabonga/sandbox/issues"
+  },
+  "homepage": "https://github.com/goabonga/sandbox",
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "chai-as-promised": "^5.0.0",
+    "istanbul": "^0.3.14",
+    "jscs": "^1.13.1",
+    "jsdoc": "^3.3.0",
+    "jshint": "^2.7.0",
+    "mocha": "^2.2.5",
+    "sinon": "^1.14.1",
+    "sinon-chai": "^2.7.0",
+    "wd": "^0.3.11"
+  }
+}
